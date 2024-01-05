@@ -9,7 +9,7 @@
   :root {
     width: 100vw;
 	height: 100vh;
-	background: linear-gradient(334deg, #858383, #706f6f, #363636);
+	background: linear-gradient(334deg, #557481, #4e5358, #363636);
 	background-size: 180% 180%;
 	animation: gradient-animation 6s ease infinite;
 }
@@ -28,8 +28,7 @@
 }
 
 body {
-  display: inline;
-  
+ display: inline;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -37,4 +36,27 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+#inner-container {
+  align-items: center;
+  justify-content: center;
+}
+
+#navbarNavAltMarkup{
+  flex-grow: 0;
+}
+
+#stuff-holder{
+  justify-content: space-around;
+}
+
+#navbar-container {
+  padding-left: 20%;
+  padding-right: 20%;
+  
+}
+
+h1, h5, p {
+  color: white;
 }
