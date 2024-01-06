@@ -28,7 +28,8 @@
 }
 
 body {
- display: inline;
+ display: grid;
+  justify-items: center;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -59,4 +60,14 @@ body {
 
 h1, h5, p {
   color: white;
+}
+
+#stuff {
+  height: 80%;
+}
+
+#content-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
