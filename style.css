@@ -1,76 +1,73 @@
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    width: 100vw;
-	height: 100vh;
-	background: linear-gradient(334deg, #557481, #4e5358, #363636);
-	/* background-size: 180% 180%; */
-	animation: gradient-animation 6s ease infinite;
+* {
+  font-family: "Comfortaa", sans-serif;
+}
+h1 {
+  font-weight: 700;
+  font-size: 50px;
 }
 
-
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+/* 
+.block1 {
+  flex: 1 0 100px; 
+  max-width: 700px;
+  min-width: 100px;
+  background: blue;
+} */
+/* .block2 {
+  flex: 1 0 100px;
+  background-color: red;
+  width: 100vw;
+  max-width: 1100px;
+  min-width: 260px;
+} */
 
 @keyframes gradient-animation {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-body {
- display: grid;
-  justify-items: center;
-  overflow: hidden;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+img {
+  max-width: 150px;
+  max-height: 150px;
+  transition: ease-in-out 2s;
 }
 
-#inner-container {
-  align-items: center;
+img:hover {
+  max-width: 1110px;
+  max-height: 1110px;
+}
+
+.block {
+  margin: 50px;
+  padding: 50px;
+
+  border-radius: 30px;
+
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
-
-#navbarNavAltMarkup{
-  flex-grow: 0;
-}
-
-#stuff-holder{
-  justify-content: space-around;
-}
-
-#navbar-container {
-  padding-left: 10%;
-  padding-right: 10%;
-  
-}
-
-h1, h5, p {
-  color: white;
-}
-
-#stuff {
-  height: 80%;
-}
-
-#content-container {
-  height: 100vh;
+.words {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
