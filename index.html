@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
 
-    <script src="script.js"></script>
-    <title>Raphael Burce Home</title>
+    <title>Home</title>
 </head>
 
 <body>
+    <div class="beef" style="position: absolute; z-index: 9"> <img src="images\left beemp 1.gif" alt=""></div>
     <navbar>
         <nav>
-            <ul class="active">Home</ul>
-            <ul> <a href="#edu">Education</a></ul>
+            <ul class="active" style="text-decoration: underline;">Home</ul>
+            <ul> <a href="/education.html">Education</a></ul>
             <ul>Portfolio</ul>
             <ul>Hobbies</ul>
         </nav>
@@ -25,50 +25,22 @@
 
     <header>
         <div class="block" style="justify-content: space-evenly;">
-            <img src="images\CAR_ALMIGHTY.jpg" alt="profile pic">
-            <div class="words">
+            <div id="prof_pic"><img src="images\CAR_ALMIGHTY.jpg" alt="profile pic"></div>
+            <div class="words" id="intro">
                 <h5>Hello, I am</h5>
                 <h1>Raphael Burce</h1>
                 <h3>Software Developer</h3>
             </div>
 
-            <h5>Hello! What can be more exciting in a recruiting career than
-                hiring a fresher??
-                Don't bash it till you
-                try it! Explore my page and maybe I'll convice you to interview me soon! BEWARE: My cat might try and
+            <h5 style="width: 100%; text-align: center; padding-top: 20px;">BEWARE: My cat might try and
                 walk into frame. Just click her to swat her away.</h5>
 
         </div>
         <div class="block" style="margin: 0; padding: 0;"><button class="download">Download resume</button></div>
     </header>
 
-    <main>
-        <div class="block" id="edu">
-            <h3>education</h3>
-            <img src="images\CAR_ALMIGHTY.jpg" alt="profile pic">
-            <p>I graduated with my bachelor's of science in computer science in December 2023. It took me 4 and a half
-                years, with classes every summer because I took a break semester to try and pursue nursing. After that
-                semester, I changed my major from my original computer engineering major to computer science. I did all
-                of this while working part time in order to pay for parking, books, tech, and other daily expenses.
-            </p>
-        </div>
-        <div class="block">
-            <h3>portfolio</h3>
-            <img src="images\CAR_ALMIGHTY.jpg" alt="profile pic">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam quidem ullam at expedita esse vel eaque,
-                aspernatur debitis fugiat! Architecto fugiat animi et voluptatibus quod excepturi quidem modi aliquid
-                voluptatem.</p>
-        </div>
-        <div class="block">
-            <h3>hobbies</h3>
-            <img src="images\CAR_ALMIGHTY.jpg" alt="profile pic">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam quidem ullam at expedita esse vel eaque,
-                aspernatur debitis fugiat! Architecto fugiat animi et voluptatibus quod excepturi quidem modi aliquid
-                voluptatem.</p>
-        </div>
-    </main>
 
-
+    <script src="src/script.js"></script>
 </body>
 
 </html>
