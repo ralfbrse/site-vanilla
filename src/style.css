@@ -1,5 +1,12 @@
 * {
   font-family: "Comfortaa", sans-serif;
+  --bg_color_light: white;
+  --button_color_light: #0077b5;
+  --accent_color_light: grey;
+
+  --bg_color_dark: black;
+  --button_color_dark: #0077b5;
+  --accent_color_dark: rgb(236, 249, 255);
 }
 
 html {
@@ -18,7 +25,7 @@ h1 {
 a,
 a:visited {
   color: grey;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 main {
@@ -110,7 +117,7 @@ nav {
   height: 100%;
   margin: 80px;
   /* background-color: #707070; */
-  color: grey;
+  color: var(--accent_color_light);
   font-size: 20px;
   font-weight: 700;
 }
@@ -136,4 +143,12 @@ navbar {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+}
+
+nav > ul {
+  margin: 0;
+}
+
+.fadeIn {
+  animation: fadeIn 1.5sec both;
 }

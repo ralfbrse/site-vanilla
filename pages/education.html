@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="/src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
-
-    <script src="src/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bs-brain@2.0.3/tutorials/timelines/timeline-4/assets/css/timeline-4.css">
+    <script src="/src/script.js" defer></script>
     <title>Education</title>
 </head>
 
@@ -18,22 +20,140 @@
     <navbar>
         <nav>
             <ul><a href="/index.html">Home</a></ul>
-            <ul class="active"> <a href="/education.html">Education</a></ul>
+            <ul class="active"> <a href="/pages/education.html">Education</a></ul>
             <ul>Portfolio</ul>
             <ul>Hobbies</ul>
         </nav>
     </navbar>
 
     <header>
-        <div class="block" id="edu">
-            <h3>education</h3>
-            <img src="images\CAR_ALMIGHTY.jpg" alt="profile pic">
-            <p>I graduated with my bachelor's of science in computer science in December 2023. It took me 4 and a half
+
+
+        <img src="/assets\Grad2.jpeg" alt="Graduation pic">
+        <!-- <p>I graduated with my bachelor's of science in computer science in December 2023. It took me 4 and a half
                 years, with classes every summer because I took a break semester to try and pursue nursing. After that
                 semester, I changed my major from my original computer engineering major to computer science. I did all
                 of this while working part time in order to pay for parking, books, tech, and other daily expenses.
-            </p>
-        </div>
+            </p> -->
+
+        <!-- Timeline 4 - Bootstrap Brain Component -->
+        <section id="timeline" class="bsb-timeline-4  py-3 py-md-5 py-xl-8">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-12 col-xl-10 col-xxl-9">
+
+                        <ul class="timeline">
+                            <li class="timeline-item left">
+                                <div class="timeline-body">
+                                    <div class="timeline-meta">
+                                        <div
+                                            class="d-inline-flex flex-column px-2 py-1 text-success-emphasis rounded-2 text-md-end">
+                                            <span>Fall 2019</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content timeline-indicator">
+                                        <div class="card border-0 shadow">
+                                            <div class="card-body p-xl-4">
+                                                <h2 class="card-title mb-2">College Begins</h2>
+
+                                                <p class="card-text m-0">Admitted to CSULB. Began college in
+                                                    Pre-Computer Engineering.
+                                                    Starts working part time in fast food.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-item right">
+                                <div class="timeline-body">
+                                    <div class="timeline-meta">
+                                        <div
+                                            class="d-inline-flex flex-column px-2 py-1 text-success-emphasis rounded-2 text-md-end">
+                                            <span>Fall 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content timeline-indicator">
+                                        <div class="card border-0 shadow">
+                                            <div class="card-body p-xl-4">
+                                                <h2 class="card-title mb-2">Sophmore Year Begins</h2>
+                                                <p class="card-text m-0">Quits fast food to work on campus. Volunteers
+                                                    with Electrical Engineering professor to disassemble decomissioned
+                                                    computers for spare parts for upper division classes to use. Builds
+                                                    1st
+                                                    PC. Gaming time.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-item left">
+                                <div class="timeline-body">
+                                    <div class="timeline-meta">
+                                        <div
+                                            class="d-inline-flex flex-column px-2 py-1 text-success-emphasis rounded-2 text-md-end">
+                                            <span>Spring 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content timeline-indicator">
+                                        <div class="card border-0 shadow">
+                                            <div class="card-body p-xl-4">
+                                                <h2 class="card-title mb-2">Covid Lockdown Begins</h2>
+                                                <h6 class="card-subtitle text-secondary mb-3">aka shit hits the fan</h6>
+                                                <p class="card-text m-0">Barely survive the semester. Takes a leave of
+                                                    absence from school afterwards. Works fast food AGAIN. Tries taking
+                                                    community college classes for nursing and EMT.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-item right">
+                                <div class="timeline-body">
+                                    <div class="timeline-meta">
+                                        <div
+                                            class="d-inline-flex flex-column px-2 py-1 text-success-emphasis rounded-2 text-md-end">
+                                            <span>Spring 2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content timeline-indicator">
+                                        <div class="card border-0 shadow">
+                                            <div class="card-body p-xl-4">
+                                                <h2 class="card-title mb-2">Return to CSULB</h2>
+                                                <p class="card-text m-0">Return to CSULB to pursue Computer Science.
+                                                    Works retail to pay for daily expenses. Moves out and gains an hour
+                                                    commute to school.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-item left">
+                                <div class="timeline-body">
+                                    <div class="timeline-meta">
+                                        <div
+                                            class="d-inline-flex flex-column px-2 py-1 text-success-emphasis rounded-2 text-md-end">
+                                            <span>Fall 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content timeline-indicator">
+                                        <div class="card border-0 shadow">
+                                            <div class="card-body p-xl-4">
+                                                <h2 class="card-title mb-2">GRADUATE</h2>
+                                                <p class="card-text m-0">I did it! I finally get through my undergrad
+                                                    and earn my degree. Looking for my first role in Software
+                                                    Engineering. LETS CONNECT!!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </header>
 </body>
 
