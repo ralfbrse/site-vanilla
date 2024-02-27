@@ -28,11 +28,18 @@ if (beef_sprite) {
       beef_sprite.style.transform = null;
     }
 
-    console.log("moving");
-    console.log("beefx = ", beefX);
-    console.log("adding...", dx);
+    // console.log("moving");
+    // console.log("beefx = ", beefX);
+    // console.log("adding...", dx);
 
     //If dx or dy < 0.3, change to play sprite
     //if above, change to walk sprite
   }, 30);
 }
+
+darkmode_button = document.querySelector("#darkmode");
+darkmode_button.addEventListener("click", () => {
+  console.log("Darkmode button press");
+  element = document.body;
+  element.classList.toggle("darkmode");
+});
