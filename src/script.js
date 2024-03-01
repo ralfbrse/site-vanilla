@@ -1,3 +1,4 @@
+//Beef function
 const beef_sprite = document.querySelector(".beef");
 
 var mouseX = 0;
@@ -36,10 +37,15 @@ if (beef_sprite) {
     //if above, change to walk sprite
   }, 30);
 }
+// End Beef
 
+// Darkmode function
 darkmode_button = document.querySelector("#darkmode");
 darkmode_button.addEventListener("click", () => {
   console.log("Darkmode button press");
   element = document.body;
   element.classList.toggle("darkmode");
 });
+// End Darkmode
+
+//Fade in sequence
