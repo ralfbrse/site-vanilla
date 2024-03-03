@@ -41,11 +41,38 @@ if (beef_sprite) {
 
 // Darkmode function
 darkmode_button = document.querySelector("#darkmode");
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("darkModePref")) {
+    console.log("dmp in ls");
+    if (localStorage.getItem("darkModePref") === "dark") {
+      element = document.body;
+      element.classList.add("darkmode");
+      console.log("added darkmode");
+    } else {
+      element = document.body;
+      element.classList.remove("darkmode");
+    }
+    console.log(localStorage.getItem("darkModePref"));
+  } else {
+    localStorage.setItem("darkModePref", "light");
+    console.log("Pref addeed");
+  }
+});
+
 darkmode_button.addEventListener("click", () => {
   console.log("Darkmode button press");
   element = document.body;
   element.classList.toggle("darkmode");
+  if (element.classList.contains("darkmode")) {
+    localStorage.setItem("darkModePref", "dark");
+  } else {
+    localStorage.setItem("darkModePref", "light");
+  }
+  console.log("Pref set:", localStorage.getItem("darkModePref"));
+  console.log(element.classList);
 });
+
 // End Darkmode
 
 //Fade in sequence

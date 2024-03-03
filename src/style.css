@@ -166,6 +166,10 @@ nav {
   animation: fadeIn 1.5sec both;
 }
 
+.under_construction {
+  display: none;
+}
+
 #contact_form {
   border: black;
   display: flex;
